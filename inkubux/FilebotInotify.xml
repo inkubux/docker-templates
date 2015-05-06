@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-    <Name>Deluge</Name>
+    <Name>FileBotInotify</Name>
     <Overview>
         FileBot is the ultimate tool for organizing and renaming your movies, tv shows or anime, and music well as downloading subtitles and artwork. It's smart and just works.
         This image wraps filebot into inotify and watch a folder /watch.
