@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <Name>Deluge</Name>
+    <Overview>
+        FileBot is the ultimate tool for organizing and renaming your movies, tv shows or anime, and music well as downloading subtitles and artwork. It's smart and just works.
+        This image wraps filebot into inotify and watch a folder /watch.
+
+    </Overview>
+    <Description>
+        FileBot is the ultimate tool for organizing and renaming your movies, tv shows or anime, and music well as downloading subtitles and artwork. It's smart and just works.
+        This image wraps filebot into inotify and watch a folder /watch.
+        [b][span style='color: #E80000;']Directions:[/span][/b][br]
+        [b]/watch[/b] : in this path inotify will wait for any text file and will execute filebot that is setted to execute on the [b]/download[/b] folder.[br]
+        [b]/downloads[/b] : This is where filebot will be executed[br]
+        [b]/media[/b] : This is where filebot will place the file[br]
+        [b]/config[/b] : This is where filebot will place the his config files file. In this folder there will be the log and the exclude file from the filebot amc process[br][br]
+
+        [b]Tip:[/b] You will find in [b]/config/scripts[/b] 2 scripts [br]
+        [b]filebot.sh[/b] This is where you can modify the filebot script to fit your needs
+        [b]postprocess.sh[/b] This is script will be called after the main filebot script so you can add any postprocess script as you need. [b]ex:[/b] Here I usually put curl calls to deluge to move the storage somewhere else than /downloads
+    </Description>
+    <Registry>https://github.com/inkubux/docker-filebot</Registry>
+    <GitHub></GitHub>
+    <Repository>inkubux/filebot-inotify</Repository>
+    <Support></Support>
+    <BindTime>true</BindTime>
+    <Privileged>false</Privileged>
+    <Environment>
+        <Variable>
+            <Name></Name>
+            <Value></Value>
+        </Variable>
+    </Environment>
+    <Networking>
+        <Mode>host</Mode>
+    </Networking>
+    <Data>
+        <Volume>
+            <ContainerDir>/config</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/downloads</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/watch</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/media</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Banner>http://i.imgur.com/1feKb5m.png</Banner>
+    <Icon>http://i.imgur.com/i2B6ZdP.png</Icon>
+</Container>
