@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-    <Name>FileBotInotify</Name>
+    <Name>FileBotInotifyWatch</Name>
     <Overview>
         FileBot is the ultimate tool for organizing and renaming your movies, tv shows or anime, and music well as downloading subtitles and artwork. It's smart and just works.
         This image wraps filebot into inotify and watch a folder /watch.
@@ -19,7 +19,7 @@
         [b]filebot.sh[/b] This is where you can modify the filebot script to fit your needs
         [b]postprocess.sh[/b] This is script will be called after the main filebot script so you can add any postprocess script as you need. [b]ex:[/b] Here I usually put curl calls to deluge to move the storage somewhere else than /downloads
     </Description>
-    <Registry>https://github.com/inkubux/docker-filebot</Registry>
+    <Registry>https://registry.hub.docker.com/u/inkubux/filebot-inotifywatch</Registry>
     <GitHub></GitHub>
     <Repository>inkubux/filebot-inotifywatch</Repository>
     <Support></Support>
