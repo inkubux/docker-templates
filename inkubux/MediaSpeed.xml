@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-    <Name>FileBotInotifyWatch</Name>
+    <Name>MediaSpeed</Name>
     <Overview>
         An experimental mini media server like plex/emby. It tries to be fast and light easy. Edit
 Add topics
