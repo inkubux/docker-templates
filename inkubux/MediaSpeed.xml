@@ -21,8 +21,13 @@ Add topics
             <Value></Value>
         </Variable>
     </Environment>
-    <Networking>
-        <Mode>host</Mode>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Networking>
     <Data>
         <Volume>
