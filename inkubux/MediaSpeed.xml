@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <Name>FileBotInotifyWatch</Name>
+    <Overview>
+        An experimental mini media server like plex/emby. It tries to be fast and light easy. Edit
+Add topics
+
+    </Overview>
+    <Description>
+        An experimental mini media server like plex/emby. It tries to be fast and light easy.
+    </Description>
+    <Registry>https://hub.docker.com/r/inkubux/mediaspeed</Registry>
+    <GitHub></GitHub>
+    <Repository>inkubux/mediaspeed</Repository>
+    <Support></Support>
+    <BindTime>true</BindTime>
+    <Privileged>false</Privileged>
+    <Environment>
+        <Variable>
+            <Name></Name>
+            <Value></Value>
+        </Variable>
+    </Environment>
+    <Networking>
+        <Mode>host</Mode>
+    </Networking>
+    <Data>
+        <Volume>
+            <ContainerDir>/data</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+        <Volume>
+            <HostDir></HostDir>
+            <ContainerDir>/media</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Banner></Banner>
+    <Icon></Icon>
+</Container>
